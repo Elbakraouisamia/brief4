@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table de multiplication </title>
+    <link rel="stylesheet" href="./deviner.css">
+    <script src="./deviner.js" defer></script>
+
+
+</head>
+<body>
+    <aside>
+        <nav>
+           
+            <ul>
+                <li><a href="variables.html">variables</a></li></br>
+                <li><a href="date.HTML">Conditions</a></li></br>
+                <li><a href="tableau1.html">date</a></li></br>
+                <li>
+                    <h4>boucle</h4>
+                    <ul>
+                        <li><a href="deviner.html">calculatrice</a></li></br>
+                        <li><a href="losange (1).html">boucle while</a></li></br>
+                        <li><a href="calculatrice.html">boucle imbriquees</a></li></br>
+                        <li><a href="phrase.html">boucle imbriquees</a></li></br>
+                        <li><a href="voyelle.html">boucle imbriquees</a></li></br>
+                        <li><a href="table.html">boucle imbriquees</a></li></br>
+
+                    </ul>
+                </li>
+                <li><a href="Chaines de caractères"></a></li></br>
+                <li><a href="Tableaux"></a></li></br>
+                <li><a href="Fonctions"></a></li></br>
+            </ul>
+        </nav>
+    </aside>
+    <div class="container">
+        <main>
+    <header> <h1> Devine le nombre </h1></header>
+    <section class=" enoncé"> 
+     <h3>Enoncé</h3>
+     <p>L’utilisateur doit deviner un nombre entre 1 et 50 que le programme
+         a choisi aléatoirement en 10 tentatives. Quand l’utilisateur entre une valeur,
+          on lui affiche le nombre de tentatives restantes,
+         ainsi qu’un message indiquant si sa réponse est correcte ou pas.</p>
+    </section>
+    <section class="demo">
+    <h3> Démo</h3>
+        <div class="deviner">
+            <p>Tentatives choisis un nombre entre 1-50: </br>Tentatives: <span id="tentatives">10</span></p>
+            <input id="deviner-input" type="text" placeholder="Devinez un nombre">
+            <button onclick=onSubmit() class="btn">Envoyer</button>
+            
+          
+            <p id="message"></p>
+        </div>
+    </section>
+    <section class="Code">
+        <h3> Code source </h3>
+        <form class="from">
+            
+                <P>var answer;
+                    var tries;
+                    var attempsOutput;
+                    var winMessage;
+                    var itIsSmall;
+                    var itIsBigger;
+                    // Seize 
+                    var lostMessage = "Game over";
+                    var tentatives = document.getElementById("tentatives");
+                    var message = document.getElementById("message")
+                    
+                    answer = Math.floor(Math.random() * 50 );
+                    tries =10;
+                    function writeattempts () {
+                        tentatives.innerHTML = tries;
+                    }
+                    
+                    
+                    function onSubmit (){
+                        --tries;
+                        attempsOutput = 10 - tries;
+                    
+                        if(tries > 0){
+                            var userInput = document.getElementById("deviner-input").value;
+                    
+                            if(isNaN(userInput) || userInput== undefined){
+                                alert("Please Enter a Number!")
+                            } else {
+                                isCorrect(userInput)
+                            }
+                            userInput.value = ""
+                        } else {
+                            message.innerHTML = lostMessage
+                            tentatives.innerHTML = 0;
+                        }
+                    }
+                    
+                    function isCorrect(userInput) {
+                            
+                         itIsSmall = "Mon numéro est inférieur" + " " + userInput + " , Essaye!"
+                         itIsBigger = "Mon numéro est supérieur" + " " + userInput + " , Essaye!"
+                            if (userInput == answer){
+                                if(tries >= 8){
+                                    winMessage = 'Bravo, tu as gagné !!!'
+                                } else {
+                                    winMessage = "Félicitations, tu as gagné après "  + attempsOutput + " " + "tentatives" ;
+                                }
+                                message.innerHTML = winMessage
+                    
+                            } else if (userInput > answer){
+                                message.innerHTML = itIsSmall
+                                writeattempts() 
+                    
+                            } else if (userInput < answer){
+                                message.innerHTML = itIsBigger
+                                writeattempts() 
+                    
+                            } 
+                    
+                             }</P>
+    </form>
+    
+</section>
+</div>
+</main>
+</body>
+</html>
+    

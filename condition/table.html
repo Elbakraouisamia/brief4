@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./table.css">
+    <title> Variables</title>
+    <script src="./table.js" defer></script>
+
+</head>
+<body>
+
+    <aside>
+        <nav>
+           
+            <ul>
+                <li><a href="variables.html">variables</a></li></br>
+                <li><a href="date.HTML">Conditions</a></li></br>
+                <li><a href="tableau1.html">date</a></li></br>
+                <li>
+                    <h4>boucle</h4>
+                    <ul>
+                        <li><a href="deviner.html">calculatrice</a></li></br>
+                        <li><a href="losange (1).html">boucle while</a></li></br>
+                        <li><a href="calculatrice.html">boucle imbriquees</a></li></br>
+                        <li><a href="phrase.html">boucle imbriquees</a></li></br>
+                        <li><a href="voyelle.html">boucle imbriquees</a></li></br>
+                        <li><a href="table.html">boucle imbriquees</a></li></br>
+
+                    </ul>
+                </li>
+                <li><a href="Chaines de caractères"></a></li></br>
+                <li><a href="Tableaux"></a></li></br>
+                <li><a href="Fonctions"></a></li></br>
+            </ul>
+        </nav>
+    </aside>
+    <div class="container">
+        <main>
+    <header> <h1> Table de Multiplication </h1></header>
+    <section class=" enoncé"> 
+     <h3>Enoncé</h3>
+     <p>Ecrire un script qui permute deux nombres saisis dans deux inputs</p>
+    </section>
+    <section class="demo">
+    <h3> Démo</h3>
+    <form name="per">   
+        <input id="num" type="number" name="a"  />
+         <input id="btn" type="button" value="générer la table "  />
+
+     </form>
+     <p id="output"></p>
+    </section>
+    <section class="Code">
+        <h3> Code source </h3>
+        <form class="from">
+          <p>let num = document.getElementById("num");
+            let btn = document.getElementById("btn");
+            let output = document.getElementById("output");
+            
+            btn.addEventListener('click' ,multiplication )
+            
+            function multiplication(){
+                output.innerHTML = "";
+               for (let i = 1; i <=10; i++) {
+                console.log(` ${i} * ${num.value} = ${i*num.value} `);
+                output.innerHTML += ` ${i} * ${num.value} = ${i*num.value}<br> `;
+               }
+            
+            } </p>
+                
+
+
+    </section>
+   </div>
+</body>
+</html>

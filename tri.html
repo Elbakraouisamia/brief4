@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table de multiplication </title>
+    <link rel="stylesheet" href="">
+    <script src="./deviner.js" defer></script>
+
+
+</head>
+<body>
+    <nav>
+        <ul>
+            <li> variables</li>
+            <li>Conditions</li>
+            <li>Boucles</li>
+            <li>Chaines de caractères</li>
+            <li>Tableaux</li>
+            <li>Fonctions</li>
+        </ul>
+
+    </nav>
+    <header> <h1> Devine le nombre </h1></header>
+    <section class=" enoncé"> 
+     <h3>Enoncé</h3>
+     <p>L’utilisateur doit deviner un nombre entre 1 et 50 que le programme
+         a choisi aléatoirement en 10 tentatives. Quand l’utilisateur entre une valeur,
+          on lui affiche le nombre de tentatives restantes,
+         ainsi qu’un message indiquant si sa réponse est correcte ou pas.</p>
+    </section>
+    <section class="demo">
+    
+        <form id="search-table">
+            <label>la taille de tableau</label>
+            <input type="number" id="nbr1-taille">
+            <input type="button" value="Valider" onclick="validetri()"><br>
+            <label>Veuiller remplir le tableau</label>
+            <div id="tableau1">
+            </div>
+            <input type="button" value="Trier" onclick="tri()">
+            <div id="tableau-tri">
+            </div>
+        </form>
+    </section>
+    <section class="Code">
+        <h3> Code source </h3>
+        <form class="from">
+            <span>Code</span>
+                <input type="nombre" placeholder="">
+    </form>
+    </section>
+    </body>
+    </html>
+    

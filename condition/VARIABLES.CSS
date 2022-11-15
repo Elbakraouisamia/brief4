@@ -1,0 +1,111 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+nav{
+    margin: 30px;
+    background-color: #C7C7C7;
+}
+
+nav ul li {
+    list-style-type: none;
+    background-color: #C7C7C7;
+    padding: 6px 0;
+
+}
+nav ul .submenu{
+    display: none;
+    margin-left: 10px;
+
+}
+nav ul li a{
+    text-decoration: none;
+    color: black;
+
+}
+nav ul li a:hover{
+    color: red;
+
+}
+
+nav ul li:hover .submenu{
+    display: block;
+    color: aqua;
+}
+
+
+aside{
+    width: 20%;
+    height: 100vh;
+    background-color: #C7C7C7;
+    position: fixed;
+    font-family: 'Roboto', sans-serif;
+}
+.container{
+    width: 80%;
+    margin-left: 20%;
+}
+.container h3{
+    margin-left: 30px;
+    margin-bottom: 10px;
+    WIDTH: 78px;
+    PADDING: 8px;
+    background-color: #C7C7C7
+   
+   
+}
+.container P{
+        MARGIN: 10px;
+        margin-left: 30px;
+        background-color: #F1F1F1; 
+        padding: 30px;
+        HEIGHT: 38px;
+        WIDTH: 800px;
+       
+    
+}
+.from p{
+    MARGIN: 10px;
+    margin-left: 30px;
+    background-color: #F1F1F1; 
+    padding: 30px;
+    HEIGHT:  70px;
+    WIDTH: 800px;
+   
+
+}
+section input{
+    MARGIN: 5px;
+    margin-left: 30px;
+    padding: 5Px;
+    
+}
+section label{
+    margin-left: 30px;
+    background-color: #d8d3d2;
+}
+header h1{
+    text-align: center;
+    font-size: 40px;
+    padding: top 21PX;
+    padding-left: 20%;
+    
+    margin-left:  -586px;
+    padding-top: -7px;
+    padding-bottom: 41px;
+    }
+    span{
+        margin-left: 30px;
+       
+        margin-bottom: 10px;
+        WIDTH: 78px;
+        PADDING: 8px;
+        background-color: #C7C7C7
+    }
+.chaines,
+.boucle,
+.Tableaux {
+  position: relative;
+}
+

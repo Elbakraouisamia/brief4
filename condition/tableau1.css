@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+aside{
+    width: 20%;
+    height: 100vh;
+    background-color: #C7C7C7;
+    position: fixed;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container{
+    width: 80%;
+    margin-left: 20%;
+}
+header h1{
+
+font-size: 40px;
+padding: top 21PX;
+padding-left: 50%;
+
+margin-left: -240px;;
+padding-top: -7px;
+padding-bottom: 6px;
+}
+
+
+ h3{
+     width: 60px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 30px;
+    background-color: #C7C7C7 
+}
+ P{
+    margin-left: 30px;
+    
+    
+}
+ input{
+    display: flex;
+    PADDING: 11px;
+    WIDTH:  229px;
+    MARGIN: 10px;
+    MARGIN-LEFT: 30PX;
+    
+}
+ .texte label{
+    margin-left: 30px;
+    background-color: #d8d3d2;
+}
+ .input button{
+    
+    
+    margin-left: 34px;
+    width: 131px;
+    margin-top: 0px;
+    HEIGHT: 2px;
+
+}
+nav{
+    margin: 30px;
+    background-color: #C7C7C7;
+}
+
+nav ul li {
+    list-style-type: none;
+    background-color: #C7C7C7;
+    padding: 6px 0;
+
+}
+
+nav ul li:hover {
+    background-color: #C7C7C7;
+    color:#F44336;
+}
+section p{
+    background-color: #F1F1F1; 
+}
+.Démo{
+   
+    margin-left: 30px; 
+   
+}
+.Démo P{ 
+     margin-left: 30px;
+    background-color: #F1F1F1; 
+    padding: 30px;
+    HEIGHT:  8px;
+    WIDTH: 800px;
+   
+
+}
+P {
+    margin-left: 30px;
+    background-color: #F1F1F1; 
+    padding: 30px;
+  
+    WIDTH: 800px;
+   
+}
+h3{
+    margin-left: 57px;
+    margin-bottom: 10px;
+    WIDTH: 78px;
+    PADDING: 8px;
+    background-color: #C7C7C7
+   
+   
+}
+.enoncé P {
+    margin-left: 30px;
+    background-color: #F1F1F1; 
+    padding: 30px;
+    HEIGHT:  45px;
+    WIDTH: 800px;
+   
+}
+.from h3{
+    margin-left: 23%; 
+    MARGIN-TOP: -31px;
+}
+
+label{
+    margin-left: 4%; 
+}
+button{
+    margin-left: 4%; 
+    width: 120px;
+    padding: 5px;
+}

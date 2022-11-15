@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./VARIABLES.CSS">
+    <title> Variables</title>
+    <script src="./var.js" defer></script>
+
+</head>
+<body>
+    <aside>
+        <nav>
+           <ul class="nav-links">
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">Menu</a>
+                    <ul class="submenu">
+                        <li><a href="#">Menu</a></li>
+                        <li><a href="#">Menu</a></li>
+                        <li><a href="#">Menu</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">Menu</a>
+                    <ul class="submenu">
+                        <li><a href="#">Menu</a></li>
+                        <li><a href="#">Menu</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Menu</a>
+                    <ul class="submenu">
+                        <li><a href="#">Menu</a></li>
+                        <li><a href="#">Menu</a></li>
+                    </ul>
+                </li>
+           </ul>
+            
+        </nav>
+    </aside>
+    <div class="container">
+    <main>
+    <header> <h1> Permutation de deux nombres </h1></header>
+   
+    <section class=" enoncé"> 
+     <h3>Enoncé</h3>
+     <p>Ecrire un script qui permute deux nombres saisis dans deux inputs</p>
+    </section>
+    <section class="demo">
+    <h3> Démo</h3>
+    <form name="per">   
+        <input type="text" name="a"  />
+         <input type="button" value="Permuter" onClick="permuter()" />
+        <input type="text" name="b"style="number" />
+     </form>
+    </section>
+    <section class="Code">
+        <h3> Code source </h3>
+        <form class="from">
+            
+                <p>function permuter(){
+                    x=document.per.a.value;
+                    document.per.a.value=document.per.b.value;
+                    document.per.b.value=x;
+                 }
+                 function init(){
+                    document.per.a.focus();
+                 }</p>
+
+
+    </section>
+</div>
+</main>
+</body>
+</html>

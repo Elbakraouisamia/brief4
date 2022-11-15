@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./date.CSS">
+    <title>Document</title>
+</head>
+<body>
+    <aside>
+        <nav>
+           
+            <ul>
+                <li><a href="variables.html">variables</a></li></br>
+                <li><a href="date.HTML">Conditions</a></li></br>
+                <li><a href="tableau1.html">date</a></li></br>
+                <li>
+                    <h4>boucle</h4>
+                    <ul>
+                        <li><a href="deviner.html">calculatrice</a></li></br>
+                        <li><a href="losange (1).html">boucle while</a></li></br>
+                        <li><a href="calculatrice.html">boucle imbriquees</a></li></br>
+                        <li><a href="phrase.html">boucle imbriquees</a></li></br>
+                        <li><a href="voyelle.html">boucle imbriquees</a></li></br>
+                        <li><a href="table.html">boucle imbriquees</a></li></br>
+
+                    </ul>
+                </li>
+                <li><a href="Chaines de caractères"></a></li></br>
+                <li><a href="Tableaux"></a></li></br>
+                <li><a href="Fonctions"></a></li></br>
+            </ul>
+        </nav>
+   
+</aside>
+<div class="container">
+<main>
+    <article>
+      <SEction class="Enoncé">
+        <DIv class="Démo">
+        <H1> VALIDER UNE DATE </H1>
+        <h4>Enoncé</h4>
+        <P>Ecrire un script qui permet de saisir les trois champs d’une date (jour, mois et année) et</br>
+             d’indiquer si la date est correcte ou non</P>
+             <H4>Démo</H4>
+   
+             <label for="name">mois</label><br>
+        <input type="text" placeholder="MM" id="month">
+        <label for="name">jour</label><br>
+        <input type="text" placeholder="DD" id="date">
+        <label for="name">Annéé</label><br>
+        <input type="text" placeholder="YYYY" id="year">
+        <button  onclick="btn1()">Check</button>
+        <h4 id="resultat"></h4>  
+      
+           
+        
+   </section>
+   <H4>CODE SOURCE</H4>
+   <P>function btn1() {
+    let day = parseInt(document.getElementById('date').value);
+    let month = parseInt(document.getElementById('month').value);
+    let year = parseInt(document.getElementById('year').value);
+
+    if (day <= 31 && month <= 12 && month !== 2 && month !== 4 && month !== 6 && month !== 9 && month !== 11 && year <= 2022 && year >= 1999){
+        document.getElementById('incorrecte').innerHTML = day + "/" + month + "/" + year + " est correcte"
+       }
+        else if(day <= 30 && month == 4 && month == 6 && month == 9 && month == 11 && year <= 2022 && year >= 2000){
+            document.getElementById('incorrecte').innerHTML = day + "/" + month + "/" + year + " est correcte !!"
+
+        }
+        else if(day < 29 && month == 02 && year <= 2022 && year >= 2000){
+            document.getElementById('incorrecte').innerHTML = day + "/" + month + "/" + year + " est correcte !!"
+        }
+        else{
+            document.getElementById('incorrecte').innerHTML = day + "/" + month + "/" + year + " est incorrecte !!"
+        }
+
+}
+
+</P>
+</DIv>
+    
+    
+  
+    <script src="./date.JS"></script>
+    </article>
+</div>
+  </main>
+</body>
+</html>
